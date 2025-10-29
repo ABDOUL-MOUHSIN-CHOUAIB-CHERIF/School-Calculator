@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-image: url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#calculator{
+    font-family: Arial,sans-serif;
+    border-radius: 15px;
+    max-width: inherit; /* Increased width for both sections */
+    overflow: hidden;
+    margin-top: 100px;
+    backdrop-filter: blur(15px);
+}
+#calculator-container {
+    display: flex;
+    gap: 10px;
+}
+#basic-section, #scientific-section {
+    flex: 1;
+}
+#display{
+    width: 100%;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 20pxpx;
+    background-color: rgb(207, 200, 200);
+    color: rgb(0, 0, 0);
+    overflow-x: auto;
+    padding: 0 10px;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+#scientific-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    height: fit-content;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(239, 83%, 51%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(113, 69%, 42%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 50%);
+}
+.operator-btn:hover{
+    background-color: hsl(355, 80%, 50%);
+}
+.operator-btn:active{
+    background-color: rgb(99, 9, 143);
+}
+#science{
+    width: 70px;
+    font-size: 20px;
+}
+#scientific-buttons button {
+    font-size: 1.8rem;
+    width: 80px;
+    height: 60px;
+}
